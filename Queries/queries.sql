@@ -82,7 +82,7 @@ ORDER BY de.dept_no;
 SELECT * FROM salaries
 ORDER BY to_date DESC;
 
---LIST 1 EMPLOYEE INFORMATION
+--LIST 1 EMPLOYEE INFORMATION FOR CURRENT EMPLOYEES IN RETIREMENT AGE
 SELECT e.emp_no, e.first_name, e.last_name, e.gender, s.salary, de.to_date
 INTO emp_info
 FROM employees as e
@@ -120,3 +120,27 @@ FROM current_emp as ce
 		ON (ce.emp_no = de.emp_no)
 	INNER JOIN departments as d
 		ON (de.dept_no = d.dept_no);
+
+-- RETIRING from Sales
+SELECT ei.emp_no,
+	ei.first_name,
+	ei.last_name,
+	d.dept_name
+FROM emp_info as ei
+INNER JOIN dept_emp as de
+ON (ei.emp_no=de.emp_no)
+INNER JOIN departments as d
+ON (de.dept_no = d.dept_no)
+WHERE dept_name = 'Sales';
+
+-- RETIRING from Sales and Development
+SELECT ei.emp_no,
+	ei.first_name,
+	ei.last_name,
+	d.dept_name
+FROM emp_info as ei
+INNER JOIN dept_emp as de
+ON (ei.emp_no=de.emp_no)
+INNER JOIN departments as d
+ON (de.dept_no = d.dept_no)
+WHERE dept_name = 'Sales' OR dept_name = 'Development';
