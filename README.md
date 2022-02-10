@@ -11,18 +11,11 @@ Specifically, managers would like to know the number of retiring employees withi
 
 Overall, the total number of current employees that may be retiring from PH is 72,458.  The following table shows the number of employees retiring by job title:
 
-<<<<<<< HEAD
-![Total retiring by job title](Resources/Total_retiring.png)
-=======
-![Total retiring by job title](Resources/Total retiring.png)
->>>>>>> ac2218a2812484ee59f5d1f3c1a68e746bda2e7b
+![Total retiring by job title](Total_retiring.png)
 
 ### Number of Employees Eligible for the Mentorship Program
 
 Overall, the total number of current employees that may be eligible for the Mentorship Program is 1,549.  The following table show the number of emplyess eliglble for the mentorship program by job title.
 
-<<<<<<< HEAD
-![Retiring and eliglble for the mentorship program](Resources/Number_of_Mentors.png)
-=======
-![Retiring and eliglble for the mentorship program](Resources/Number of Mentors.png)
->>>>>>> ac2218a2812484ee59f5d1f3c1a68e746bda2e7b
+![Retiring and eligible for the mentorship program](Resources/Number_of_Mentors.png)
+
