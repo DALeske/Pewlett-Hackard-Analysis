@@ -52,3 +52,34 @@ INNER JOIN employees as e
 ON me.emp_no = e.emp_no
 GROUP BY me.title, e.gender 
 ORDER BY me.title ASC, e.gender DESC;
+
+
+-- First Hire dates in each department
+
+SELECT MIN(e.hire_date) as first_date,  di.dept_name
+INTO first_dates
+FROM employees as e
+INNER JOIN dept_info as di
+ON e.emp_no = di.emp_no
+INNER JOIN emp_info as ei
+ON e.emp_no = ei.emp_no
+WHERE ei.to_date = '9999-01-01'
+GROUP BY  di.dept_name;
+
+-- Create table of Silver Hackers
+SELECT fd.dept_name, e.last_name, e.hire_date
+INTO silver_hackers
+FROM employees as e
+INNER JOIN dept_info as di
+ON e.emp_no = di.emp_no
+INNER JOIN first_dates as fd
+ON di.dept_name = fd.dept_name
+WHERE fd.first_date = e.hire_date
+Group BY fd.dept_name, e.last_name, e.hire_date;
+
+-- Get the names of all the Silver Hackers
+SELECT e.first_name, e.last_name, e.hire_date, sh.dept_name
+FROM employees as e
+INNER JOIN silver_hackers as sh
+ON e.emp_no = sh.emp_no
+ORDER BY sh.dept_name ASC, e.last_name ASC;
