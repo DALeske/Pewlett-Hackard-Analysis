@@ -29,7 +29,7 @@ The major findings of this analysis are:
 * There are no retiring managers that are currently eligible for the Mentorship Program.
 
 ## Summary
-Management has had concerns about the upcoming "silver tsunami" of retirees, and their concerns are justified, as there is a significant number of individuals that will be retiring. Nevertheless, the idea of a Mentoring Program has the potential to reduce the impact of the wave. There are sufficient numbers of current employees who will be eligible to become mentors to new employees for all the job titles, with the exception of Managers. Upper management should be aware of the lack of potential mentors within management and may need to recruit individuals from within the departmental ranks for training prior to retirement of the current managers.
+Management has had concerns about the upcoming "silver tsunami" of retirees, and their concerns are justified, as there are 7,458 individuals across 6 job titles that will be retiring. Nevertheless, the idea of a Mentoring Program has the potential to reduce the impact of the wave. There are sufficient numbers (1,549) of qualified, retirement-ready employees who will be eligible to become mentors to new employees for all the job titles, with the exception of Managers. Upper management should be aware of the lack of potential mentors within management and may need to recruit individuals from within the departmental ranks for training prior to retirement of the current managers.
 
 ## Additional insights
 
